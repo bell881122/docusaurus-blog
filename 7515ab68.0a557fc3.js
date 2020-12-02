@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{80:function(s){s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Docusaurus2 Step1-\u5b89\u88dd\u8207\u555f\u52d5","permalink":"/docusaurus-blog/Docusaurus2-Step1-Install"}]}')}}]);
