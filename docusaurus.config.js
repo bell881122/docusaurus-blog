@@ -1,30 +1,45 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: '笑笑的程式人生',
+  tagline: '記錄各種程式學習、專案筆記。',
+  url: 'https://bell881122.github.io',
+  baseUrl: '/docusaurus-blog/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  url: 'https://bell881122.github.io',
-  baseUrl: '/docusaurus-blog/',
-  projectName: 'docusaurus-blog', // Usually your repo name.
   organizationName: 'bell881122', // Usually your GitHub org/user name.
+  projectName: 'docusaurus-blog', // Usually your repo name.
   themeConfig: {
+    colorMode:{
+      defaultMode: 'dark',// "light" | "dark"
+    },
     navbar: {
-      title: 'My Site',
+      title: '笑笑的程式人生',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          // to: 'blog', 
+          to: '/',
+          label: '部落格',
+          position: 'left'
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          // to: 'blog', 
+          to: '/profile',
+          label: '關於我',
+          position: 'left'
+        },
+        
+        //  {
+        //    to: 'docs/',
+        //    activeBasePath: 'docs',
+        //    label: '文件',
+        //    position: 'left',
+        //  },
+        {
+          href: 'https://github.com/bell881122',
           label: 'GitHub',
           position: 'right',
         },
@@ -32,52 +47,7 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `版權所有 © ${new Date().getFullYear()} Xiaoxiao Emi　|　建置工具 Docusaurus2.0`,
     },
   },
   presets: [
@@ -86,15 +56,10 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          path: './blog',
+          routeBasePath: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -102,4 +67,8 @@ module.exports = {
       },
     ],
   ],
+  plugins: ['docusaurus-plugin-sass'],
+  // stylesheets: [
+    // "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css",
+  // ],
 };

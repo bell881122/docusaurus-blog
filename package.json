@@ -15,9 +15,14 @@
     "@docusaurus/core": "2.0.0-alpha.69",
     "@docusaurus/preset-classic": "2.0.0-alpha.69",
     "@mdx-js/react": "^1.6.21",
+    "bootstrap": "^4.5.3",
     "clsx": "^1.1.1",
+    "docusaurus-plugin-sass": "^0.1.11",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.2.0",
+    "react-social-icons": "^4.1.0"
   },
   "browserslist": {
     "production": [

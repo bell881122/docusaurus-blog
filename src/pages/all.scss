@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities";
+
+.profile {
+    @media (max-width: 575px) {
+        .textCenter {
+            text-align: left;
+        }
+    }
+
+    @media (min-width: 576px) {
+        h3 {
+            text-align: center;
+        }
+
+        .textCenter {
+            text-align: center;
+        }
+    }
+}
