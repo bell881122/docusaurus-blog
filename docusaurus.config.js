@@ -8,13 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: "Emi's Blog",
   tagline: 'Dinosaurs are cool',
-  url: 'https://bell881122.github.io/docusaurus/',
-  baseUrl: '/',
+  url: 'https://bell881122.github.io/docusaurus-blog/',
+  baseUrl: '/docusaurus-blog/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'bell881122', // Usually your GitHub org/user name.
+  projectName: 'docusaurus-blog', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
@@ -24,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/bell881122/docusaurus/edit/master/docs/',
+          editUrl: 'https://github.com/bell881122/docusaurus-blog/edit/master/docs/',
           routeBasePath: '/',
         },
         blog: {
